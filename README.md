@@ -1,4 +1,5 @@
 📊 Employee Turnover Prediction | Salifort Motors
+
 Project Overview
 
 Employee turnover presents a significant operational and financial challenge for Salifort Motors. High attrition leads to increased recruitment costs, productivity loss, and strain on team morale. This project leverages Python-based data analysis and machine learning to predict employee turnover and uncover the key drivers behind employee departures.
