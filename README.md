@@ -8,29 +8,29 @@ Using survey data collected by the HR department, this analysis explores how fac
 
 **Objectives**
 
-Analyze employee survey and HR data to identify patterns related to turnover
+- Analyze employee survey and HR data to identify patterns related to turnover
 
-Build and evaluate predictive models (Logistic Regression, Decision Tree, Random Forest, XGBoost)
+- Build and evaluate predictive models (Logistic Regression, Decision Tree, Random Forest, XGBoost)
 
-Compare model performance using standard classification metrics
+- Compare model performance using standard classification metrics
 
-Identify the most influential features contributing to employee attrition
+- Identify the most influential features contributing to employee attrition
 
-Translate analytical insights into clear, actionable business recommendations
+- Translate analytical insights into clear, actionable business recommendations
 
 **Approach**
 
-The project follows a structured data science workflow:
+- The project follows a structured data science workflow:
 
-Exploratory Data Analysis (EDA) to understand workforce trends and potential risk factors
+- Exploratory Data Analysis (EDA) to understand workforce trends and potential risk factors
 
-Data preprocessing & feature engineering, including encoding categorical variables
+- Data preprocessing & feature engineering, including encoding categorical variables
 
-Model development and evaluation, focusing on interpretability and predictive performance
+- Model development and evaluation, focusing on interpretability and predictive performance
 
-Feature importance analysis to uncover the main drivers of turnover
+- Feature importance analysis to uncover the main drivers of turnover
 
-Executive-level insights aligned with HR and leadership decision-making
+- Executive-level insights aligned with HR and leadership decision-making
 
 **Business Value**
 
