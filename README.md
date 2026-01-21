@@ -10,7 +10,7 @@ Using survey data collected by the HR department, this analysis explores how fac
 
 - Analyze employee survey and HR data to identify patterns related to turnover
 
-- Build and evaluate predictive models (Logistic Regression, Decision Tree, Random Forest, XGBoost)
+- Build and evaluate predictive models (Logistic Regression, Decision Tree, Random Forest)
 
 - Compare model performance using standard classification metrics
 
