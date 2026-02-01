@@ -1,37 +1,42 @@
-📊 ****Employee Turnover Prediction | Salifort Motors****
+## **Predictive Modeling of Employee Attrition at Salifort Motors**
 
-**Project Overview**
+### **Project Overview**
 
-Employee turnover presents a significant operational and financial challenge for Salifort Motors. High attrition leads to increased recruitment costs, productivity loss, and strain on team morale. This project leverages Python-based data analysis and machine learning to predict employee turnover and uncover the key drivers behind employee departures.
+The objective of this project was to address the critical operational and financial challenges posed by high employee turnover at Salifort Motors. By utilizing a dataset of employee survey responses and HR records, I developed three predictive models—Logistic Regression, Decision Tree, and Random Forest—to identify at-risk staff. The analysis successfully uncovered key turnover drivers, such as high workload and inadequate salary, while the **Random Forest model** emerged as the top performer, providing high-accuracy predictions to guide targeted retention strategies.
 
-Using survey data collected by the HR department, this analysis explores how factors such as job role, department, workload, tenure, performance evaluation, salary level, and work-life balance indicators influence an employee’s likelihood of leaving the organization.
+### **Business Understanding**
 
-**Objectives**
+The primary stakeholders for this project are the **Salifort Motors HR Department** and **Executive Leadership**. The core business problem is the rising cost of attrition, which includes recruitment expenses, loss of institutional knowledge, and diminished team morale.
 
-- Analyze employee survey and HR data to identify patterns related to turnover
+In the automotive sector, turnover can be particularly costly; research indicates that replacing a technical or specialized employee can cost between **100% and 150% of their annual salary** (Built In, 2024). Furthermore, high workload and perceived unfairness in compensation are leading indicators of "turnover intention" within manufacturing environments (Journal of Positive School Psychology). This project seeks to mitigate these risks by providing a data-driven early warning system.
 
-- Build and evaluate predictive models (Logistic Regression, Decision Tree, Random Forest)
+### **Data Understanding**
 
-- Compare model performance using standard classification metrics
+The analysis was conducted using internal survey data collected by the HR department. The dataset captures a comprehensive snapshot of the workforce, including:
 
-- Identify the most influential features contributing to employee attrition
+* **Operational Metrics:** Monthly hours worked, number of projects, and tenure.
+* **Performance & Sentiment:** Last evaluation scores and self-reported satisfaction levels.
+* **Organizational Context:** Departmental affiliation and salary level (low, medium, high).
+* **Safety & Status:** Work accidents and promotion history within the last five years.
 
-- Translate analytical insights into clear, actionable business recommendations
+**Data Limitations:** The dataset is a cross-sectional "snapshot," meaning it does not capture changes in employee sentiment over time. Additionally, "satisfaction" is a self-reported metric, which may be subject to response bias.
 
-**Approach**
+### **Modeling and Evaluation**
 
-- The project follows a structured data science workflow:
+To ensure a robust prediction, I implemented and compared three distinct modeling approaches. The models were evaluated primarily on **F1-Score** and **AUC-ROC** to balance precision and recall, ensuring that we identify as many at-risk employees as possible without excessive false alarms.
 
-- Exploratory Data Analysis (EDA) to understand workforce trends and potential risk factors
+| Model | Key Metrics & Strengths |
+| --- | --- |
+| **Logistic Regression** | Provided a baseline for interpretability and established linear relationships between features like salary and attrition. |
+| **Decision Tree** | Captured non-linear patterns, such as the "u-shaped" relationship between workload and turnover (where both very low and very high workloads drive exits). |
+| **Random Forest** | **Top Performer.** Delivered the highest predictive accuracy and identified "Number of Projects" and "Average Monthly Hours" as the most influential features. |
 
-- Data preprocessing & feature engineering, including encoding categorical variables
+### **Conclusion**
 
-- Model development and evaluation, focusing on interpretability and predictive performance
+The analysis reveals that turnover at Salifort Motors is primarily driven by **extreme workloads** and **stagnant career progression**. To solve these business problems, I recommend the following:
 
-- Feature importance analysis to uncover the main drivers of turnover
+* **Cap Workload:** Implement a threshold for maximum monthly hours and project assignments to prevent burnout.
+* **Re-evaluate Compensation:** Conduct a market salary audit for roles in the "high turnover" departments (e.g., Sales) to ensure competitive pay.
+* **Improve Internal Mobility:** Establish clear promotion pathways, as a lack of recent promotions was a significant predictor of departure.
 
-- Executive-level insights aligned with HR and leadership decision-making
-
-**Business Value**
-
-The final model helps Salifort Motors proactively identify at-risk employees and understand why they may leave. These insights empower leadership to design targeted retention strategies, improve job satisfaction, and reduce long-term hiring and training costs.
+**Future Steps:** To expand on this project, I plan to incorporate **Time-Series Analysis** to determine if turnover peaks during specific seasons and integrate **Natural Language Processing (NLP)** on exit interview text data to capture qualitative insights not present in the current survey.
